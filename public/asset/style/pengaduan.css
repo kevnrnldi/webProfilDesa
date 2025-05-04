@@ -1,0 +1,112 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+  }
+  
+  /* Container utama */
+  .containerku {
+    max-width: 800px;
+    margin-top: 130px !important;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header halaman */
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+  
+  .header h1 {
+    font-size: 32px;
+    color: #27548A;
+    margin-bottom: 10px;
+  }
+  
+  .header p {
+    font-size: 16px;
+    color: #555;
+  }
+  
+  /* Form Group */
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    font-weight: 600;
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  /* Input dan Textarea */
+  input[type="text"],
+  input[type="tel"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 12px 14px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s;
+  }
+  
+  input:focus,
+  textarea:focus,
+  select:focus {
+    border-color: #e63946;
+    outline: none;
+    background-color: #fff;
+  }
+  
+  /* File upload */
+  input[type="file"] {
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+  }
+  
+  /* Tombol Submit */
+  button[type="submit"] {
+    padding: 12px 24px;
+    background-color: #27548A;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #183B4E;
+  }
+  
+  /* Pesan kesalahan */
+  .text-danger {
+    font-size: 14px;
+    color: #d9534f;
+    margin-top: 5px;
+  }
+  
+  /* Responsive */
+  @media (max-width: 576px) {
+    .container {
+      padding: 20px;
+    }
+  
+    .header h1 {
+      font-size: 24px;
+    }
+  }
+  

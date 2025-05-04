@@ -1,0 +1,141 @@
+/* ===== Global ===== */
+* {
+    font-family: 'Segoe UI', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding-top: 50px;
+  }
+  
+  /* ===== Detail Berita Utama ===== */
+  .card-detail {
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    padding: 20px;
+    margin-bottom: 40px;
+  }
+  
+  .detail-title {
+    font-size: 28px;
+    color: #333333;
+    margin-bottom: 20px;
+  }
+  
+  .detail-image-wrapper {
+    width: 100%;
+    max-height: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .detail-image {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+  
+  .detail-content {
+    font-size: 16px;
+    color: #444444;
+    line-height: 1.6;
+    margin-bottom: 20px;
+  }
+  
+  .btn-back {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #6c757d;
+    color: #ffffff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+  }
+  
+  .btn-back:hover {
+    background-color: #5a6369;
+  }
+  
+  /* ===== Daftar Berita Lainnya ===== */
+  .other-news {
+    background: #f9f9f9;
+    border-radius: 8px;
+    padding: 20px;
+  }
+  
+  .other-news h4 {
+    margin-bottom: 15px;
+    font-size: 20px;
+    color: #27548A;
+  }
+  
+  /* Grid kartu kecil */
+  .other-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  /* Setiap kartu kecil */
+  .other-card {
+    display: flex;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+    overflow: hidden;
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .other-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+  
+  .other-thumb {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    flex-shrink: 0;
+  }
+  
+  .other-info {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .other-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333333;
+    text-decoration: none;
+    margin-bottom: 4px;
+  }
+  
+  .other-title:hover {
+    text-decoration: underline;
+  }
+  
+  .other-date {
+    font-size: 12px;
+    color: #777777;
+  }
+  
+  .detail-date {
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+  }
+  

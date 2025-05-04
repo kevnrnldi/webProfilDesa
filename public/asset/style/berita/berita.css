@@ -1,0 +1,167 @@
+/* Mengatur font umum */
+* {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container untuk konten utama */
+.container {
+  max-width: 1200px;
+  margin: 40px auto;
+  padding-top: 50px;
+  text-align: center; /* Tengahkan teks dalam container */
+}
+
+/* Header bagian atas */
+.header {
+  margin-bottom: 30px;
+}
+
+.header h1 {
+  color: #27548A;
+  font-size: 36px;
+  margin-bottom: 10px;
+}
+
+.header p {
+  font-size: 16px;
+  color: #444;
+}
+
+/* Grid untuk menampilkan kartu berita */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+  margin-bottom: 40px;
+  justify-content: center; /* Tengahkan grid */
+}
+
+/* Styling untuk kartu */
+.card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 360px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto; /* Tengahkan kartu */
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Gambar di dalam kartu */
+.card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Konten dalam kartu */
+.card-content {
+  padding: 20px;
+  flex-grow: 1;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* Container untuk badge tanggal + tombol */
+.card-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Tengahkan badge & tombol */
+  padding: 0 20px 20px;
+  gap: 10px;
+}
+
+/* Badge tanggal pada kartu */
+.badge-date {
+  background-color: #27548A;
+  color: white;
+  padding: 6px 12px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  line-height: 1;
+}
+
+/* Tombol lihat selengkapnya */
+.card-actions .btn {
+  padding: 8px 16px;
+  background-color: #27548A;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s;
+}
+
+.card-actions .btn:hover {
+  background-color: #183B4E;
+}
+
+/* Styling untuk tombol kembali */
+.btn-back {
+  padding: 10px 20px;
+  background-color: #6c757d;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background-color 0.3s;
+  display: inline-block;
+  margin-top: 20px;
+}
+
+.btn-back:hover {
+  background-color: #5a6369;
+}
+
+/* Styling untuk konten detail berita */
+.card-detail {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-top: 20px;
+  text-align: left;
+}
+
+.card-detail h2 {
+  font-size: 28px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-detail p {
+  font-size: 16px;
+  color: #444;
+  line-height: 1.6;
+}
+
+.card-detail img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin-bottom: 20px;
+}

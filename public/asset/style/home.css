@@ -1,0 +1,228 @@
+/* General body styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+}
+
+/* Container for home content */
+#homeCarousel {
+  margin: 0;
+  max-width: 100vw;
+  height: 100vh;
+  position: relative;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+/* Carousel image styling */
+.carousel-item img {
+  height: 100vh;
+  width: 100vw;
+  object-fit: cover;
+}
+
+/* Carousel caption styling */
+.carousel-caption {
+  font-weight: bold;
+  color: #fff;
+  text-shadow: 3px 1px 0 black;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  z-index: 1;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: left;
+  left: 2rem;
+  right: auto;
+  max-width: 36%;
+  bottom: auto;
+}
+
+.carousel-caption h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  text-shadow: 4px 3px 0 black
+}
+
+/* Tombol next dan previous disembunyikan */
+.carousel-control-prev, 
+.carousel-control-next {
+  visibility: hidden; /* Menyembunyikan tombol */
+}
+
+.carousel-item .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(22, 22, 22, 0.4); /* Ubah 0.4 ke 0.6 jika mau lebih gelap */
+  z-index: 0;
+}
+
+/* Additional spacing for content */
+.content-section {
+  padding: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Footer override if needed */
+footer {
+  font-size: 0.9rem;
+}
+
+/* administrasi page styling */
+.adminh1 {
+  color: #27548A;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.adm {
+  font-size: 16px;
+  color: #333;
+  max-width: 1000px;
+  margin-bottom: 30px;
+}
+
+.stat-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Dua kolom */
+  gap: 15px 40px; /* Spasi antar baris & kolom */
+  max-width: 1000px;
+}
+
+.stat-card {
+  display: flex;
+  width: 100%;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  overflow: hidden;
+  background: #fff;
+}
+
+.stat-card .number {
+  background: linear-gradient(90deg, #183B4E, #27548A);
+  color: white;
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding: 20px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 120px;
+}
+
+.stat-card .label {
+  font-weight: 600;
+  color: #444;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  padding: 0 25px;
+  flex: 1;
+  background: #fdfdfd;
+}
+
+/* Tombol "Lihat Semua Berita" di bawah berita */
+.lihat-semua-btn {
+  background-color: #c62828; /* Tombol warna merah */
+  color: white;
+  font-weight: bold;
+  padding: 12px 24px;
+  border-radius: 5px;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+  font-size: 1rem;
+  margin-bottom: 3em;
+}
+
+.lihat-semua-btn:hover {
+  background-color: #b71c1c; /* Tombol jadi lebih gelap ketika hover */
+}
+
+.news-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 40px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.news-card {
+  width: 300px;
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s;
+}
+
+.news-card:hover {
+  transform: translateY(-5px);
+}
+
+.news-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.news-content {
+  padding: 20px;
+  text-align: center;
+}
+
+.news-content h3 {
+  font-size: 1.2rem;
+  color: #c62828;
+  margin-bottom: 10px;
+}
+
+.news-content p {
+  font-size: 0.95rem;
+  color: #555;
+  margin-bottom: 15px;
+}
+
+.news-content a {
+  color: #c62828;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/* Responsive (di HP) */
+@media (max-width: 768px) {
+  .news-card {
+      width: 100%;
+  }
+
+  .adminh1, .adm {
+      text-align: center;
+  }
+
+  .stat-grid {
+      grid-template-columns: 1fr;
+      margin: 0;
+  }
+
+  .news-card {
+      width: 100%;
+  }
+
+  .lihat-semua-btn {
+      padding: 14px 28px;
+      font-size: 1.1rem;
+  }
+}

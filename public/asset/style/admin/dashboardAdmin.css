@@ -1,0 +1,139 @@
+/* Styling untuk halaman Admin */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.lead {
+    font-size: 1.1rem;
+    color: #6c757d;
+    margin-bottom: 30px;
+    text-align: justify; /* Rata kiri-kanan */
+}
+
+/* Card Styling */
+.card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.723);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background-color: #fff;
+    border: none;
+}
+
+.card-body {
+    padding: 30px;
+    text-align: center;
+}
+
+.card-body:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+.card-body h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.card-body p {
+    font-size: 1rem;
+    color: #6c757d;
+    margin-bottom: 20px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+.card-body i {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+/* Card Icon and Link Styling */
+.card-body a {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #007bff;
+    text-decoration: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    background-color: #f8f9fa;
+    transition: background-color 0.3s;
+}
+
+.card-body a:hover {
+    background-color: #007bff;
+    color: #fff;
+}
+
+/* Specific Colors for Notifications */
+.bg-primary {
+    background-color: #b3d9ff; /* Soft Blue */
+}
+
+.bg-success {
+    background-color: #d4edda; /* Soft Green */
+}
+
+.bg-danger {
+    background-color: #f8d7da; /* Soft Red */
+}
+
+.card-body i {
+    color: #0056b3; /* Soft Blue for Icon */
+}
+
+.card-body i.bi-newspaper {
+    color: #28a745; /* Soft Green for News */
+}
+
+.card-body i.bi-exclamation-triangle-fill {
+    color: #dc3545; /* Soft Red for Alerts */
+}
+
+/* Layout Grid */
+.row {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.col-md-4 {
+    flex: 1 1 calc(33.333% - 20px);
+}
+
+@media (max-width: 768px) {
+    .row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .col-md-4 {
+        flex: 1 1 100%;
+        margin-bottom: 20px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+    }
+
+    .card-body p {
+        font-size: 0.9rem;
+    }
+
+    .card-body a {
+        font-size: 0.9rem;
+    }
+}

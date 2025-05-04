@@ -1,0 +1,128 @@
+/* General body styling */
+.bg-teal {
+    background-color: #183B4E  !important;
+}
+
+/* Mengubah font */
+body {
+    font-family: 'Inter', sans-serif; /* Ganti font dengan Inter */
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+/* Navbar */
+#mainNavbar {
+    background-color: #27548A;  /* Biru Gelap */
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#mainNavbar .navbar-brand img {
+    transition: transform 0.3s ease;
+    width: 45px;
+}
+
+#mainNavbar .navbar-brand:hover img {
+    transform: scale(1.1);
+}
+
+#mainNavbar .nav-link {
+    color: #fff;
+    font-weight: 500;
+    padding-bottom: 5px;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+#mainNavbar .nav-link:hover,
+#mainNavbar .nav-link.active {
+    color: #ffcc00;
+    transform: scale(1.05);
+}
+
+#mainNavbar .kelembagaan-link {
+    text-decoration: none !important;
+    color: #fff !important;
+}
+
+#mainNavbar .kelembagaan-link:hover,
+#mainNavbar .kelembagaan-link.active {
+    color: #ffcc00;
+}
+
+#mainNavbar .dropdown-menu {
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Footer Styling */
+footer {
+    background-color: #183B4E; /* Biru Gelap */
+    color: #fff;
+    font-size: 0.95rem;
+    padding: 30px 0;
+}
+
+footer .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+footer .row {
+    display: flex;
+    justify-content: space-between;
+    text-align: left;
+}
+
+footer .col-md-6 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+footer .col-md-6 img {
+    width: 100px;
+    height: 100px;
+    margin-right: 20px;
+}
+
+footer .fw-bold {
+    font-weight: 600;
+}
+
+footer .bi {
+    font-size: 1rem;
+    margin-right: 10px;
+}
+
+/* Center the copyright section */
+footer .text-center {
+    margin-top: 20px;
+    font-size: 0.85rem;
+}
+
+
+/* Responsive adjustments for footer */
+@media (max-width: 767px) {
+    footer .row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    footer .col-md-6 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    #mainNavbar .navbar-brand img {
+        width: 40px;
+    }
+
+    .navbar-nav .nav-item {
+        margin-left: 0;
+        margin-bottom: 10px;
+    }
+}
+

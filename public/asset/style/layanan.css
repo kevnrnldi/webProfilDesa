@@ -1,0 +1,72 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.layanan-container {
+  padding: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+
+.layanan-container h1 {
+  font-size: 40px;
+  margin-top: 2em;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: #27548A;
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.layanan-grid {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.layanan-column {
+  flex: 1;
+  min-width: 300px;
+
+}
+.layanan-column h2{
+  color: #183B4E;
+}
+
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+ol {
+  padding-left: 20px;
+}
+
+ol li {
+  margin-bottom: 5px;
+}
+
+/* Responsive untuk HP */
+@media (max-width: 768px) {
+  .layanan-grid {
+      flex-direction: column;
+  }
+}

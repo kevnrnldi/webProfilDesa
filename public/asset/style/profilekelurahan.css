@@ -1,0 +1,223 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+/* Full width section */
+.section {
+  width: 100%;
+  padding: 100px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Container dalam section */
+.profil-container {
+  width: 100%;
+  max-width: 1100px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Tiap section beda background */
+.visi-misi {
+  background-color: #ffeaea;
+}
+
+.sambutan {
+  background-color: #ffe0e0;
+}
+
+.struktur{
+  background-color: #ffeaea;
+}
+.tupoksi{
+  background-color: #ffe0e0;
+}
+
+
+/* Section Header */
+.section-header {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.section-header h2 {
+  font-size: 2.8rem;
+  color: #27548A;
+  position: relative;
+}
+
+.section-header h2::after {
+  content: '';
+  display: block;
+  width: 60px;
+  height: 4px;
+  background: #27548A;
+  margin: 10px auto 0;
+  border-radius: 2px;
+}
+
+/* Cards */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+}
+
+/* Semua card */
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 40px;
+  text-align: center;
+  flex: 1 1 450px;
+  max-width: 500px;
+}
+
+/* Full width card */
+.full-width {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+}
+
+/* Untuk teks panjang di full-width */
+.full-width .card-text {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: justify;
+}
+
+/* Card Title */
+.card-title {
+  font-size: 2rem;
+  color: #27548A;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+/* Card Text */
+.card-text {
+  font-size: 1.1rem;
+  color: #333;
+  line-height: 1.8;
+  text-align: justify; /* Menambahkan perataan teks */
+  margin-bottom: 10px; /* Memberikan jarak antar item list */
+}
+
+/* List di dalam card */
+.card-text ol {
+  text-align: justify; /* Menambahkan perataan teks untuk list */
+  padding-left: 20px;
+  margin: 0;
+}
+
+
+/* ===== SECTION Sambutan ===== */
+.sambutan {
+  background-color: #ffe0e0;
+  /* padding besar boleh dipertahankan untuk jarak antar section */
+  padding: 80px 0;
+}
+
+/* pastikan container tetap di tengah */
+.profil-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* kartu sambutan mengikuti konten */
+.card-sambutan {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 30px;        /* spasi di dalam kartu */
+  width: 100%;
+  max-width: 900px;
+  /* tidak mengunci height, biarkan auto */
+  height: auto;
+  /* agar posisinya di tengah kontainer */
+  margin: 0 auto;
+  /* teks di-justify agar rapi */
+  text-align: justify;
+  line-height: 1.7;
+}
+
+/* teks di dalam kartu */
+.card-sambutan .card-text {
+  margin: 0;
+  display: block;
+  font-size: 1.1rem;
+  color: #333;
+}
+
+
+/* Struktur Organisasi Card */
+.struktur-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+}
+
+/* Gambar Struktur Organisasi */
+.struktur-img {
+  max-width: 50em;
+  height: auto;
+  margin-top: 20px auto;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+}
+
+/* Tugas Fungsi Card */
+.tugas-fungsi-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  padding: 40px;
+  width: 100%;
+  max-width: 900px;
+  text-align: center;
+}
+
+/* Tugas Fungsi Text */
+.tugas-fungsi-text {
+  text-align: justify;
+  max-width: 850px;
+  margin: 0 auto;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card, .full-width, .struktur-card, .tugas-fungsi-card {
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+
+  .section-header h2 {
+    font-size: 2.2rem;
+  }
+}
