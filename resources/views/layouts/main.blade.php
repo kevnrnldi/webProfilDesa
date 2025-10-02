@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Layout</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="stylesheet" href="{{ asset('asset/style/main.css') }}">
     
@@ -19,8 +20,8 @@
 
   <body>
 
-    <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top" style="transition: background-color 0.3s ease; background-color: transparent;">
-      <div class="container-fluid mx-5">
+    <nav id="mainNavbar" class="navbar navbar-expand-lg fixed-top " style="transition: background-color 0.3s ease; background-color: transparent;">
+      <div class="container-fluid mx-5 my-2">
           <a class="navbar-brand" href="#">
               <img src='https://upload.wikimedia.org/wikipedia/commons/9/98/Kota_Bengkulu.png' width="50" alt="Logo Kota Bengkulu">
           </a>
@@ -28,7 +29,7 @@
               <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse ms-auto" id="navbarNav">
-            <ul class="navbar-nav ms-auto gap-3">
+            <ul class="navbar-nav ms-auto">
               <li class="nav-item">
                 <a class="nav-link {{ Request::is('home') ? 'active' : '' }}" href="{{ route('home') }}">Beranda</a>
               </li>
@@ -70,7 +71,9 @@
                 <a class="nav-link {{ Request::is('pengaduan.create') ? 'active' : '' }}" href="{{ route('pengaduan.create') }}">Pengaduan</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link {{ Request::is('login') ? 'active' : '' }}" href="{{ route('login') }}">Masuk</a>
+                <button class="btn btn-primary py-1">
+                  <a class="nav-link {{ Request::is('login') ? 'active' : '' }}" href="{{ route('login') }}">Masuk</a>
+                </button>
               </li>
             </ul>
           </div>

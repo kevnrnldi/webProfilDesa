@@ -4,7 +4,7 @@
 <div class="container mt-4">
     <div class="card shadow-sm border-light">
         <div class="card-header bg-primary text-dark">
-            <h4 class="mb-0">Visi dan Misi Lurah Lempuing</h4>
+            <h4 class="mb-0 text-white">Visi dan Misi Lurah Lempuing</h4>
         </div>
         <div class="card-body">
             <h5 class="text-primary">Visi</h5>

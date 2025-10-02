@@ -208,7 +208,7 @@
               @php
                 $icon = match(strtolower($item->subkategori)) {
                   'islam' => 'bi-moon-stars',
-                  'kristen', 'katolik' => 'bi-cross',
+                  'kristen', 'bi-person-circle' => 'bi-person-circle',
                   'hindu' => 'bi-flower1',
                   'buddha', 'budha' => 'bi-circle-half',
                   'konghucu' => 'bi-fan',

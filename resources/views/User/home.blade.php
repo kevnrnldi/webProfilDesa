@@ -107,14 +107,18 @@
 
     {{-- === Berita Desa === --}}
     <div class="container my-5 text-center">
-        <h1 class="fw-bold mb-3" style="color:#27548A">Berita Desa</h1>
+        <h1 class="fw-bold mb-3" style="color:#27548A">Berita Kelurahan</h1>
         <p class="text-muted mb-4">Menyajikan informasi terbaru tentang peristiwa dan artikel jurnalistik dari Kelurahan Lempuing</p>
 
         <div class="row justify-content-center">
             @foreach($berita as $item)
                 <div class="col-md-4 mb-4">
                     <div class="card h-100">
+                        @if ($item->gambar == null)
+                            <img src="{{ asset('asset/berita.png') }}" alt="Gambar Berita" class="card-img-top" width="100%" height="200px">
+                        @else
                         <img src="{{ asset('storage/' . $item->gambar) }}" class="card-img-top" alt="{{ $item->judul }}">
+                        @endif
                         <div class="card-body d-flex flex-column">
                             <h5 class="card-title">{{ $item->judul }}</h5>
                             <p class="card-text">{{ \Illuminate\Support\Str::limit(strip_tags($item->isi), 100) }}</p>

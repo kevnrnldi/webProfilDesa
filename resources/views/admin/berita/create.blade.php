@@ -2,7 +2,7 @@
 
 @section('content')
 <div class="container">
-    <h2>Tambah Berita Baru</h2>
+    <h2 class="fw-bold text-primary">Tambah Berita Baru</h2>
 
     <form action="{{ route('berita.store') }}" method="POST" enctype="multipart/form-data">
         @csrf

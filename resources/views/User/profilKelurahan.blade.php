@@ -84,42 +84,24 @@
     <div class="card full-width tugas-fungsi-card">
       <div class="card-text tugas-fungsi-text">
         {{-- Kalau mau dari database juga bisa, tinggal ganti isinya --}}
-        <p>Berdasarkan Peraturan Wali Kota Bandung No. 1407 Tahun 2016 tentang Kedudukan, Susunan Organisasi, Tugas dan Fungsi serta Tata Kerja Kecamatan dan Kelurahan, dijelaskan bahwa tugas dan fungsi aparat pada Kelurahan adalah sebagai berikut:</p>
+        <p>Berdasarkan Peraturan Daerah Kota Bengkulu No. 11 Tahun 2008 tentang Kedudukan, Susunan Organisasi, Tugas dan Fungsi serta Tata Kerja Kecamatan dan Kelurahan, dijelaskan bahwa tugas dan fungsi aparat pada Kelurahan adalah sebagai berikut:</p>
 
         <p><strong>Lurah</strong></p>
 
-        <p>(1) Lurah mempunyai tugas membantu Camat dalam:</p>
-        <ol>
-          <li>melaksanakan kegiatan pemerintahan Kelurahan;</li>
-          <li>melakukan pemberdayaan masyarakat;</li>
-          <li>melaksanakan pelayanan masyarakat;</li>
-          <li>memelihara ketenteraman dan ketertiban umum;</li>
-          <li>memfasilitasi penyelenggaraan Perpustakaan di Kelurahan;</li>
-          <li>memelihara sarana dan prasarana serta fasilitas pelayanan umum;</li>
-          <li>melaksanakan tugas lain yang diberikan oleh camat; dan</li>
-          <li>melaksanakan tugas lain sesuai dengan ketentuan peraturan perundang-undangan.</li>
-        </ol>
+        <p>(1) Lurah mempunyai tugas menjalankan kewenangan yang dilimpahkan oleh Walikota dalam
+          menyelenggarakan urusan pemerintahan, pembangunan dan kemasyarakatan di
+          wilayahnya</p>
 
-        <p>(2) Dalam melaksanakan tugas tersebut, Lurah mempunyai uraian tugas:</p>
+        <p>(2) Untuk menyelenggarakan tugas tersebut pada Pasal 7, Lurah mempunyai fungsi:</p>
         <ol>
-          <li>menyusun rencana kerja dan program kerja Kelurahan;</li>
-          <li>membagi tugas kepada bawahan secara efektif dan efisien;</li>
-          <li>mengarahkan tugas bawahan berdasarkan kebijakan Kecamatan;</li>
-          <li>membina dan memotivasi bawahan untuk meningkatkan produktivitas kerja;</li>
-          <li>melaksanakan kegiatan pemerintahan Kelurahan;</li>
-          <li>melaksanakan pemberdayaan masyarakat di Kelurahan;</li>
-          <li>memberikan fasilitasi penyelenggaraan Perpustakaan di Kelurahan;</li>
-          <li>melaksanakan pelayanan masyarakat;</li>
-          <li>melaksanakan pembinaan administrasi kepegawaian, keuangan, dan aset Kelurahan;</li>
-          <li>memelihara sarana, prasarana, fasilitas umum dan lingkungan hidup;</li>
-          <li>membina lembaga kemasyarakatan;</li>
-          <li>memeriksa, memaraf, dan/atau menandatangani konsep naskah dinas;</li>
-          <li>membuat telaahan staf bahan perumusan kebijakan atasan;</li>
-          <li>mengkoordinasikan urusan pemerintahan umum, ekonomi, pembangunan dan sosial;</li>
-          <li>melaksanakan monitoring, evaluasi, dan pelaporan;</li>
-          <li>melakukan hubungan kerja dengan instansi terkait sesuai tugas dan fungsi;</li>
-          <li>melaksanakan tugas lain dari atasan sesuai tugas dan fungsinya.</li>
-        </ol>
+          <li>Memimpin pelaksanaan kegiatan Pemerintahan Kelurahan;</li>
+          <li>Melakukan tugas di bidang pembangunan, pemberdayaan masyarakat, pelayanan masyarakat yang menjadi tanggung jawabnya;</li>
+          <li>Melakukan kegiatan dalam rangka penyelenggaraan ketentraman dan ketertiban
+            umum;</li>
+          <li>Melaksanakan kegiatan dalam rangka pemeliharaan prasarana dan fasilitas pelayanan
+            umum;</li>
+          <li>Melakukan fungsi-fungsi lain yang dilimpahkan kepada pemerintah kelurahan.</li>
+       </ol>
       </div>
     </div>
   </div>

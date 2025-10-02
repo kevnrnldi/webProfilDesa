@@ -9,7 +9,7 @@
 <div class="containerku">
     <div class="header">
         <h1>Form Pengaduan</h1>
-        <p>Silakan isi form di bawah ini untuk mengajukan pengaduan tanpa harus login.</p>
+        <p>Silakan isi form di bawah ini untuk mengajukan pengaduan.</p>
     </div>
 
     @if(session('success'))

@@ -4,121 +4,125 @@
     <meta charset="UTF-8">
     <title>Login Admin</title>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
     <style>
-        /* Background dan Styling umum */
         body {
-            background-color: #f4f7fa;
-            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #dfe9f3, #ffffff);
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
         }
 
-        /* Styling Card */
+        .login-wrapper {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         .login-card {
-            
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-            padding: 30px;
+            background-color: #ffffff;
+            border-radius: 16px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            width: 100%;
+            max-width: 420px;
         }
 
-        /* Header dalam card */
         .login-card h3 {
-            font-size: 1.75rem;
-            font-weight: bold;
+            font-weight: 700;
+            color: #0d6efd;
             text-align: center;
-            color: #007bff;
+            margin-bottom: 10px;
         }
 
-        /* Styling Form Input */
+        .login-card p {
+            color: #6c757d;
+            text-align: center;
+            font-size: 0.95rem;
+            margin-bottom: 25px;
+        }
+
+        .form-label {
+            font-weight: 500;
+        }
+
+        .form-group {
+            position: relative;
+            margin-bottom: 1.5rem;
+        }
+
         .form-control {
-            border-radius: 8px;
-            border: 1px solid #ccc;
-            padding: 12px;
+            border-radius: 12px;
+            padding: 12px 12px 12px 12px;
             font-size: 1rem;
-            transition: border-color 0.3s ease-in-out;
+            border: 1px solid #ced4da;
+            transition: border-color 0.3s ease, box-shadow 0.3s ease;
         }
 
-        /* Fokus input */
         .form-control:focus {
-            border-color: #007bff;
-            box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+            border-color: #0d6efd;
+            box-shadow: 0 0 0 0.15rem rgba(13, 110, 253, 0.25);
         }
 
-        /* Tombol */
-        .btn-custom {
-            border-radius: 8px;
-            padding: 12px;
+        .form-icon {
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            transform: translateY(-50%);
+            color: #adb5bd;
+            transition: color 0.3s ease, transform 0.3s ease;
             font-size: 1.1rem;
-            font-weight: bold;
         }
 
-        /* Tombol Login */
-        .btn-danger {
-            background-color: #dc3545;
-            border: none;
-            transition: background-color 0.3s ease;
+        .form-control:focus + .form-icon {
+            color: #0d6efd;
+            transform: translateY(-50%) scale(1.1);
         }
 
-        .btn-danger:hover {
-            background-color: #c82333;
+        .btn-custom {
+            border-radius: 12px;
+            padding: 12px;
+            font-weight: 600;
+            font-size: 1rem;
         }
 
-        /* Tombol Kembali */
-        .btn-secondary {
-            background-color: #6c757d;
-            border: none;
-            transition: background-color 0.3s ease;
-        }
-
-        .btn-secondary:hover {
-            background-color: #5a6268;
-        }
-
-        /* Styling untuk pesan error */
         .alert-danger {
-            background-color: #f8d7da;
-            color: #721c24;
-            border-radius: 5px;
-            padding: 10px;
             font-size: 0.875rem;
-        }
-
-        /* Media Query untuk Responsivitas */
-        @media (max-width: 767px) {
-            .login-card {
-                width: 90%;
-                padding: 20px;
-            }
+            padding: 10px;
+            border-radius: 10px;
         }
     </style>
 </head>
 <body>
-<div class="container mt-5">
-    <div class="row justify-content-center">
-        <div class="col-md-6 col-lg-4">
-            <div class="login-card">
-                <h3>Login Admin</h3>
-                
-                <!-- Pesan error -->
-                @if ($errors->any())
-                    <div class="alert alert-danger">{{ $errors->first() }}</div>
-                @endif
-                
-                <form method="POST" action="/login">
-                    @csrf
-                    <div class="mb-3">
-                        <label for="email" class="form-label">Email</label>
-                        <input type="email" name="email" class="form-control" placeholder="Masukkan Email Anda" required autofocus>
-                    </div>
-                    <div class="mb-3">
-                        <label for="password" class="form-label">Kata Sandi</label>
-                        <input type="password" name="password" class="form-control" placeholder="Masukkan Password" required>
-                    </div>
-                    <button type="submit" class="btn btn-danger w-100 btn-custom mb-3">Login</button>
-                </form>
-                <!-- Tombol Kembali -->
-                <a href="{{ url()->previous() }}" class="btn btn-secondary w-100 btn-custom">Kembali</a>
+<div class="container login-wrapper">
+    <div class="login-card">
+        <h3><i class="bi bi-shield-lock-fill me-2"></i>Login Admin</h3>
+        <p>Silakan masuk untuk mengelola konten dan data website kelurahan dengan aman.</p>
+
+        <!-- Pesan error -->
+        @if ($errors->any())
+            <div class="alert alert-danger">{{ $errors->first() }}</div>
+        @endif
+
+        <form method="POST" action="/login">
+            @csrf
+            <div class="form-group">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" name="email" class="form-control" placeholder="Masukkan Email Anda" required autofocus>
             </div>
-        </div>
+
+            <div class="form-group">
+                <label for="password" class="form-label">Kata Sandi</label>
+                <input type="password" name="password" class="form-control" placeholder="Masukkan Password" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100 btn-custom mb-3">
+                <i class="bi bi-box-arrow-in-right me-1"></i> Login
+            </button>
+        </form>
+
+        <a href="{{ route('home') }}" class="btn btn-outline-secondary w-100 btn-custom">
+            <i class="bi bi-arrow-left me-1"></i> Kembali ke Beranda
+        </a>
     </div>
 </div>
 </body>

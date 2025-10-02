@@ -19,7 +19,11 @@
           {{ \Carbon\Carbon::parse($berita->created_at)->format('d M Y') }}
         </div>
         <div class="detail-image-wrapper">
+          @if ($berita->gambar == null)
+        <img src="{{ asset('asset/berita.png') }}" alt="Gambar Berita"  class="detail-image">
+      @else
           <img src="{{ asset('storage/' . $berita->gambar) }}" alt="Gambar Berita" class="detail-image">
+        @endif
         </div>
         <div class="detail-content">
           {!! nl2br(e($berita->isi)) !!}
@@ -35,7 +39,11 @@
         <div class="other-grid">
           @foreach($otherBerita as $other)
           <a href="{{ route('berita.detail', $other->id) }}" class="other-card">
+            @if ($other->gambar == null)
+        <img src="{{ asset('asset/berita.png') }}" alt="Gambar Berita" class="other-thumb">
+        @else
             <img src="{{ asset('storage/' . $other->gambar) }}" alt="Thumb {{ $other->judul }}" class="other-thumb">
+            @endif
             <div class="other-info">
               <div class="other-title">{{ Str::limit($other->judul, 60) }}</div>
               <div class="other-date">{{ \Carbon\Carbon::parse($other->created_at)->format('d M Y') }}</div>

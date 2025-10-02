@@ -27,12 +27,12 @@
 
     <div class="card shadow-sm">
         <div class="card-body">
-            <h3 class="card-title text-center fw-bold" style="color: #183B4E">{{ $kelembagaan->nama_kelembagaan }}</h3>
+            <h3 class="card-title text-center fw-bold text-primary" >{{ $kelembagaan->nama_kelembagaan }}</h3>
 
             <p class="card-text mt-4">{{ $kelembagaan->kegunaan }}</p>
 
             <div class="bagan-structure">
-                <h5 class="mb-3">Bagan Struktur</h5>
+                <h3 class="mb-3 text-primary fw-bold">Struktur Organisasi</h3>
                 @if($kelembagaan->gambar_bagan_struktur)
                     <img src="{{ asset('storage/' . $kelembagaan->gambar_bagan_struktur) }}" alt="Bagan Struktur {{ $kelembagaan->nama_kelembagaan }}">
                 @else

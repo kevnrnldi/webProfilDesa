@@ -5,7 +5,7 @@
 @section('content')
 
 <div class="container mt-4">
-    <h2 class="mb-4">Edit Kelembagaan</h2>
+    <h2 class="mb-4 text-primary fw-bold">Edit Kelembagaan</h2>
 
     <form action="{{ route('admin.kelembagaan.update', $kelembagaan->id) }}" method="POST" enctype="multipart/form-data">
         @csrf
